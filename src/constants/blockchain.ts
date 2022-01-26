@@ -6,6 +6,7 @@ export enum Networks {
   POLYGON_MUMBAI = 80001,
   OTTER_FORK = 31338,
   HARDHAT = 31337,
+  BSCTESTNET = 97
 }
 
 export const RPCURL = {
@@ -13,6 +14,7 @@ export const RPCURL = {
   [Networks.POLYGON_MUMBAI]: 'https://polygon-mumbai.infura.io/v3/d7dae60b5e1d40b9b31767b0086aa75d',
   [Networks.OTTER_FORK]: 'https://fork-rpc.otterclam.finance',
   [Networks.HARDHAT]: 'http://localhost:8545',
+  [Networks.BSCTESTNET]: 'https://data-seed-prebsc-1-s1.binance.org:8545/',
 };
 
 export const DEFAULT_NETWORK = Networks.POLYGON_MAINNET;
