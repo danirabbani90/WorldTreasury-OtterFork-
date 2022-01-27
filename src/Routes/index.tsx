@@ -20,14 +20,14 @@ const DefaultThemeProvider = ({ children }: PropsWithChildren<{}>) => {
 };
 
 function Root() {
-  let Content = Landing;
-  let defaultTheme: Theme | undefined = lightTheme;
-  let ThemeProvider = DefaultThemeProvider;
+  // let Content = Landing;
+  // let defaultTheme: Theme | undefined = lightTheme;
+  // let ThemeProvider = DefaultThemeProvider;
   
   // To run the app on local host uncomment these it doesnt requires app Prefix  in local host .
-  // let Content = App;
-  // let defaultTheme = undefined;
-  // let ThemeProvider = AppThemeProvider;
+  let Content = App;
+  let defaultTheme = undefined;
+  let ThemeProvider = AppThemeProvider;
 
   if (isApp()) {
     Content = App;
