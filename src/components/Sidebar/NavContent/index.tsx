@@ -179,7 +179,7 @@ function NavContent() {
                 </div>
               </Link>
 
-              <Link
+              {/* <Link
                 component={NavLink}
                 id="wrap-nav"
                 to="/wrap"
@@ -193,9 +193,9 @@ function NavContent() {
                   {checkPage(location, 'wrap') ? <IconActiveWrap /> : <IconDefaultWrap color={currentMainColor} />}
                   <p>{t('common.wrap')}</p>
                 </div>
-              </Link>
+              </Link> */}
 
-              <Link
+              {/* <Link
                 component={NavLink}
                 id="pearl-chests-nav"
                 to="/pearl-chests"
@@ -213,7 +213,7 @@ function NavContent() {
                   )}
                   <p>{t('common.pearlChests')}</p>
                 </div>
-              </Link>
+              </Link> */}
 
               <Link
                 component={NavLink}
@@ -253,7 +253,7 @@ function NavContent() {
                   </div>
                 </div>
               </div>
-              <Link
+              {/* <Link
                 href={'https://www.otterclam.finance/#/otto'}
                 target="_blank"
                 rel="noreferrer"
@@ -264,9 +264,9 @@ function NavContent() {
                   <p>Otto</p>
                   <div className="dapp-menu-item__new">NEW</div>
                 </div>
-              </Link>
+              </Link> */}
 
-              <Link
+              {/* <Link
                 href={'https://quickswap.exchange/#/swap?outputCurrency=' + CLAM_ADDRESS}
                 target="_blank"
                 rel="noreferrer"
@@ -276,7 +276,7 @@ function NavContent() {
                   <IconDefaultBuyClam />
                   <p>{t('common.buyThing')}CLAM</p>
                 </div>
-              </Link>
+              </Link> */}
               <Link
                 component={NavLink}
                 id="calculator-nav"
@@ -342,9 +342,9 @@ function NavContent() {
           </Grid>
           <div className="dapp-menu-bottom">
             <SocialIcons color="gray" size={24} />
-            <p className="dapp-menu-bottom__rights">© 2021 OtterClam All Rights Reserved</p>
+            <p className="dapp-menu-bottom__rights">© 2021 World Treasury All Rights Reserved</p>
             <div className="dapp-menu-bottom__audit">
-              <AuditedMark />
+              {/* <AuditedMark /> */}
             </div>
           </div>
         </Box>

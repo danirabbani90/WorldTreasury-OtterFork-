@@ -4,11 +4,12 @@ import { useThemeChangedByTime } from 'src/hooks/theme';
 import { ScrollToTop } from 'src/helpers';
 import { Route, Switch } from 'react-router-dom';
 import { dark as darkTheme } from 'src/themes/app';
-import { NFT, Otto } from 'src/views';
+import { NFT, Otto, Stake } from 'src/views';
 import Landing from '../views/Landing';
 import './style.scss';
+import App from './App';
 
-function App() {
+function Appx() {
   const theme = useThemeChangedByTime();
   return (
     <ScrollToTop>
@@ -26,11 +27,11 @@ function App() {
           </OttoThemeContextProvider>
         </Route>
         <ThemeProvider theme={theme.theme}>
-          <Route component={Landing} />
+          <Route component={App} />
         </ThemeProvider>
       </Switch>
     </ScrollToTop>
   );
 }
 
-export default App;
+export default Appx;

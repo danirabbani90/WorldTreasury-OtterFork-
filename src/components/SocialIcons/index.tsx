@@ -51,9 +51,9 @@ export default function SocialIcons({ color, size = 32 }: Props) {
           htmlColor={fillColor}
         />
       </Link>
-      <Link href={DocsLink} className="community-icon-link">
+      {/* <Link href={DocsLink} className="community-icon-link">
         <SvgIcon component={DocIcon} style={{ width: size, height: size }} viewBox="0 0 32 32" htmlColor={fillColor} />
-      </Link>
+      </Link> */}
       <Link href={MediumLink} className="community-icon-link">
         <SvgIcon
           component={MediumIcon}

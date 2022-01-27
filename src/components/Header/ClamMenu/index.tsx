@@ -98,7 +98,7 @@ function ClamMenu() {
       onMouseLeave={e => handleClick(e)}
       id="ohm-menu-button-hover"
     >
-      <BuyButton text={t('common.buyThing')} />
+      {/* <BuyButton text={t('common.buyThing')} /> */}
       <Popper id={id} open={open} anchorEl={anchorEl} transition>
         {({ TransitionProps }) => {
           return (

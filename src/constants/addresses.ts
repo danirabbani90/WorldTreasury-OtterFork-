@@ -1,6 +1,6 @@
 import { Networks } from './blockchain';
 
-import { Networks } from './blockchain';
+// import { Networks } from './blockchain';
 
 const BSC_TESTNET = {
   sCLAM_ADDRESS: '0x589617EAADAeb5b8A419Aa242ee3b637eCD9CC4d',
