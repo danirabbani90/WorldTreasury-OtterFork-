@@ -1,5 +1,10 @@
 import { Networks } from './blockchain';
 
+<<<<<<< HEAD
+=======
+// import { Networks } from './blockchain';
+
+>>>>>>> 8ea69c6690066f776c24911aafcdcfea63fe727f
 const BSC_TESTNET = {
   sCLAM_ADDRESS: '0x6f63ea856032dab5086742d9bb7f76b1223ce92d',
   CLAM_ADDRESS: '0x32be81ab72e9ddecd0f9ac71a7fb3c2aed6fe48a',

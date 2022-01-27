@@ -134,9 +134,9 @@ function TreasuryDashboard() {
 
   return (
     <div id="treasury-dashboard-view" className={`${smallerScreen && 'smaller'} ${verySmallScreen && 'very-small'}`}>
-      <div className="hero">
+      {/* <div className="hero">
         <DashboardHero />
-      </div>
+      </div> */}
       <div className="wave" />
       <Container
         style={{

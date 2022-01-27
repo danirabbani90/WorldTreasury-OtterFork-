@@ -179,7 +179,8 @@ function App() {
         <div className={`${classes.content} ${isSmallerScreen && classes.contentShift}`}>
           <Switch>
             <Route exact path="/">
-              <Redirect to="/dashboard" />
+              {/* <Redirect to="/dashboard" /> */}
+              <Dashboard />
             </Route>
 
             <Route path="/dashboard">
