@@ -32,7 +32,11 @@
     justify-content: center;
     justify-items: center;
   }
-
+  .ohm-card {
+    background-color: #010101;
+    border: 1px solid #d1a55c;
+    box-shadow: 0px 4px 30px rgb(209 165 92 / 15%);
+  }
   .ohm-card .header {
     min-height: 3em;
   }
@@ -325,6 +329,7 @@
 
 .stake-tab-panel {
   .stake-tab-panel-btn {
+    background-color: #d1a55c !important;
     flex: 1;
     display: flex;
     align-items: center;
@@ -344,6 +349,7 @@
       font-style: normal;
       font-weight: 600;
       font-size: 18px;
+      color: #212121;
     }
   }
 }

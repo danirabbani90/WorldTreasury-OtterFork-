@@ -204,7 +204,7 @@ function Stake() {
                       <Box component="p" color="text.secondary" className="single-stake-subtitle-value">
                         {stakingAPY ? percentFormatter.format(stakingAPY) : <Skeleton width="150px" />}
                       </Box>
-                      <Box
+                      {/* <Box
                         component="p"
                         color="text.secondary"
                         className="single-stake-chest-value"
@@ -214,7 +214,7 @@ function Stake() {
                         <Typography color="textPrimary">{t('stake.chestAPY')}</Typography>
                         {chestAPY ? percentFormatter.format(chestAPY) : <Skeleton width="60px" />}
                         <InfoTooltip message={t('stake.chestAPYInfo')} />
-                      </Box>
+                      </Box> */}
                     </div>
                   </Grid>
 

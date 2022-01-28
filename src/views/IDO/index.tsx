@@ -300,7 +300,7 @@ export default function IDO() {
         )}
       </div>
 
-      <Footer backgroundColor="#f7f9fb" />
+      <Footer backgroundColor="#fff" />
     </div>
   );
 }

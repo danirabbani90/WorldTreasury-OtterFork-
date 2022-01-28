@@ -13,15 +13,15 @@ const colorPalette = {
   light: {
     otterDark: '#1D2654',
     white: '#FFFFFF',
-    darkBlue: '#212121',
-    lightGray100: '#F7F9FB',
+    darkBlue: '#060606',
+    lightGray100: '#fff',
     lightGray200: '#E9F0F3',
     lightGray300: '#DBE6EC',
     lightGray400: '#CCD4E0',
     darkGray100: '#8193B5',
     darkGray200: '#fff',
     darkGray300: '#434E77',
-    darkGray400: '#303E65',
+    darkGray400: '#d1a55c',
     highlight: '#d1a55c',
     chip: {
       normal: {
@@ -29,18 +29,18 @@ const colorPalette = {
         fg: '#1D2654',
       },
       status: {
-        bg: '#F7F9FB',
+        bg: '#fff',
         success: '#38D076',
       },
     },
   },
   dark: {
-    otterDark: '#F7F9FB',
-    white: '#212121',
+    otterDark: '#fff',
+    white: '#060606',
     darkBlue: '#FFFFFF',
     lightGray100: '#060606',
     lightGray200: '#212B4F',
-    lightGray300: '#303E65',
+    lightGray300: '#d1a55c',
     lightGray400: '#425475',
     darkGray100: '#8192B4',
     darkGray200: '#fff',
@@ -49,7 +49,7 @@ const colorPalette = {
     highlight: '#d1a55c',
     chip: {
       normal: {
-        bg: '#303E65',
+        bg: '#d1a55c',
         fg: '#E9F0F3',
       },
       status: {

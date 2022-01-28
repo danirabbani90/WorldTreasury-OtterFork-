@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
   container: {
     position: 'relative',
     zIndex: 0,
-    backgroundColor: '#212121',
+    backgroundColor: '#060606',
 
     '&::after': {
       content: '""',

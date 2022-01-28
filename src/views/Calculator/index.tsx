@@ -191,17 +191,15 @@ function Calculator() {
                       ) : (
                         <div>
                           <Typography className="metric-body">{totalBalance} sCLAM</Typography>
-                          {
-                            /*Number(pearlBalance) > 0*/ true ? (
-                              <div>
-                                <Divider />
-                                <Typography className="metric-sub">{trimmedBondedBalance} sCLAM</Typography>
-                                <Typography className="metric-sub">{trimmedPearlBalance} PEARL</Typography>
-                              </div>
-                            ) : (
-                              <Typography className="metric-sub">&nbsp;</Typography>
-                            )
-                          }
+                          {true ? (
+                            <div>
+                              <Divider />
+                              <Typography className="metric-sub">{trimmedBondedBalance} sCLAM</Typography>
+                              <Typography className="metric-sub">{trimmedPearlBalance} PEARL</Typography>
+                            </div>
+                          ) : (
+                            <Typography className="metric-sub">&nbsp;</Typography>
+                          )}
                         </div>
                       )}
                     </Box>
@@ -215,7 +213,7 @@ function Calculator() {
                 <Box className="calculator-card-action-area">
                   <Grid container spacing={3}>
                     <Grid className="calculator-metric-area" item xs={12} sm={6}>
-                      <Box className="calculator-card-action-area-inp-wrap">
+                      <Box style={{ paddingLeft: 5 }} className="calculator-card-action-area-inp-wrap">
                         <Typography className="box-title">{t('calculator.sClamAmount')}</Typography>
                         <OutlinedInput
                           id="num-box"
@@ -236,7 +234,7 @@ function Calculator() {
                       </Box>
                     </Grid>
                     <Grid className="calculator-metric-area" item xs={12} sm={6}>
-                      <Box className="calculator-card-action-area-inp-wrap">
+                      <Box style={{ paddingRight: 5 }} className="calculator-card-action-area-inp-wrap">
                         <Typography className="box-title">{t('common.apy')} (%)</Typography>
                         <OutlinedInput
                           type="number"
@@ -260,7 +258,7 @@ function Calculator() {
                       </Box>
                     </Grid>
                     <Grid className="calculator-metric-area" item xs={12} sm={6}>
-                      <Box className="calculator-card-action-area-inp-wrap">
+                      <Box style={{ paddingLeft: 5 }} className="calculator-card-action-area-inp-wrap">
                         <Typography className="box-title">{t('calculator.purchasePrice')}</Typography>
                         <OutlinedInput
                           type="number"
@@ -284,7 +282,7 @@ function Calculator() {
                       </Box>
                     </Grid>
                     <Grid className="calculator-metric-area" item xs={12} sm={6}>
-                      <Box className="calculator-card-action-area-inp-wrap">
+                      <Box style={{ paddingRight: 5 }} className="calculator-card-action-area-inp-wrap">
                         <Typography className="box-title">{t('calculator.futurePrice')}</Typography>
                         <OutlinedInput
                           type="number"
