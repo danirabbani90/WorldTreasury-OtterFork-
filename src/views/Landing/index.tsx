@@ -40,7 +40,11 @@ function Landing() {
             <div className="landing__first-section__body__audited">
               <AuditedMark />
             </div>
+<<<<<<< HEAD
+            <a className="landing__first-section__body__app-button" href="/dashboard">
+=======
             <a className="landing__first-section__body__app-button" href="https://app.otterclam.local">
+>>>>>>> 8ea69c6690066f776c24911aafcdcfea63fe727f
               <Button variant="contained" color="primary" size="medium" disableElevation>
                 {t('landing.appButton')}
               </Button>
