@@ -129,15 +129,18 @@ function NavContent() {
         <div className="dapp-menu-top">
           <Link href="https://www.otterclam.finance" target="_blank">
             <Box display="flex" flexDirection="column" className="branding-header">
+              <Box mt="10px" />
+              <Box mt="10px" />
+              <Box mt="10px" />
               <AppLogo />
               <Box mt="10px" />
-              <AppTitle />
-              {address && (
+              {/* <AppTitle /> */}
+              {/* {address && (
                 <div className="dapp-account">
                   <Davatar size={20} address={address} style={{ marginRight: 6 }} generatedAvatarType="jazzicon" />
                   <div>{ensName || shorten(address)}</div>
                 </div>
-              )}
+              )} */}
             </Box>
           </Link>
 
@@ -306,7 +309,7 @@ function NavContent() {
                 <Box
                   className="light-dark-toggle"
                   component="button"
-                  bgcolor="otter.otterBlue"
+                  bgcolor="otter.white"
                   display="flex"
                   justifyContent="center"
                   alignItems="center"
@@ -342,10 +345,8 @@ function NavContent() {
           </Grid>
           <div className="dapp-menu-bottom">
             <SocialIcons color="gray" size={24} />
-            <p className="dapp-menu-bottom__rights">© 2021 World Treasury All Rights Reserved</p>
-            <div className="dapp-menu-bottom__audit">
-              {/* <AuditedMark /> */}
-            </div>
+            <p className="dapp-menu-bottom__rights">© 2022 World Treasury All Rights Reserved</p>
+            <div className="dapp-menu-bottom__audit">{/* <AuditedMark /> */}</div>
           </div>
         </Box>
       </Box>

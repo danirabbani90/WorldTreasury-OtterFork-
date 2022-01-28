@@ -3,7 +3,7 @@ import commonSettings from './global';
 
 const colorPalette = {
   common: {
-    clamPink: '#FF6854',
+    clamPink: '#d1a55c',
     clamPinkHover: '#F5523C',
     otterBlue: '#3B4BD8',
     otterBlueHover: '#303FC7',
@@ -13,16 +13,16 @@ const colorPalette = {
   light: {
     otterDark: '#1D2654',
     white: '#FFFFFF',
-    darkBlue: '#0A0E23',
+    darkBlue: '#212121',
     lightGray100: '#F7F9FB',
     lightGray200: '#E9F0F3',
     lightGray300: '#DBE6EC',
     lightGray400: '#CCD4E0',
     darkGray100: '#8193B5',
-    darkGray200: '#5E6E99',
+    darkGray200: '#fff',
     darkGray300: '#434E77',
     darkGray400: '#303E65',
-    highlight: '#FF6854',
+    highlight: '#d1a55c',
     chip: {
       normal: {
         bg: '#DBE6EC',
@@ -36,24 +36,24 @@ const colorPalette = {
   },
   dark: {
     otterDark: '#F7F9FB',
-    white: '#0A0E23',
+    white: '#212121',
     darkBlue: '#FFFFFF',
-    lightGray100: '#101631',
+    lightGray100: '#060606',
     lightGray200: '#212B4F',
     lightGray300: '#303E65',
     lightGray400: '#425475',
     darkGray100: '#8192B4',
-    darkGray200: '#A1AEC9',
+    darkGray200: '#fff',
     darkGray300: '#CCD6E7',
     darkGray400: '#DBE6EC',
-    highlight: '#FF6854',
+    highlight: '#d1a55c',
     chip: {
       normal: {
         bg: '#303E65',
         fg: '#E9F0F3',
       },
       status: {
-        bg: '#101631',
+        bg: '#060606',
         success: '#38D076',
       },
     },

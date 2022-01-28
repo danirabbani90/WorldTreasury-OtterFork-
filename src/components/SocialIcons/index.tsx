@@ -16,7 +16,7 @@ export interface Props {
 }
 
 export default function SocialIcons({ color, size = 32 }: Props) {
-  const fillColor = color === 'blue' ? '#3B4BD8' : '#8193B5';
+  const fillColor = color === 'blue' ? '#3B4BD8' : '#d1a55c';
   return (
     <div className={styles.communityIcons}>
       <Link href={DiscordLink} className="community-icon-link">

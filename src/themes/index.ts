@@ -5,9 +5,9 @@ const colors = {
   otterDark: '#1D2654',
   otterBlue: '#3B4BD8',
   otterBlueHover: '#303FC7',
-  darkGray200: '#5E6E99',
+  darkGray200: '#fff',
   darkGray300: '#434E77',
-  clamPink: '#FF6854',
+  clamPink: '#d1a55c',
 };
 
 const lightTheme = {

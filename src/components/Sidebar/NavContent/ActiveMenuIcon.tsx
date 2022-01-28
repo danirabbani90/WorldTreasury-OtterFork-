@@ -21,7 +21,7 @@ function ActiveMenuIcon(props: SVGProps<SVGSVGElement>) {
       />
       <path
         d="M5.328 19.632c-1.934 0-3.095-2.048-3.288-3.072h19.92c-.193 1.024-1.354 3.072-3.288 3.072 0 0-.773.96-3.964.96 0 0-.774.768-2.708.768-1.934 0-2.708-.768-2.708-.768-3.19 0-3.964-.96-3.964-.96z"
-        fill="#FF6854"
+        fill="#d1a55c"
         stroke="#1D2654"
         strokeWidth={1.5}
         strokeLinecap="round"

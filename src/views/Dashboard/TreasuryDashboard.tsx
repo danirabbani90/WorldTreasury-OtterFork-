@@ -148,7 +148,7 @@ function TreasuryDashboard() {
           <Paper className="hero-metrics__paper">
             <Box display="flex" flexWrap="wrap" justifyContent="space-between" alignItems="center">
               {displayData.map(({ title, value, info, image }, i) => (
-                <Box key={i} bgcolor="mode.white" className="metric-container">
+                <Box key={i} className="metric-container">
                   <Box className="metric">
                     <Typography variant="h6" color="secondary">
                       {title}
@@ -158,7 +158,7 @@ function TreasuryDashboard() {
                       {value ? value : <Skeleton width="100px" />}
                     </Typography>
                   </Box>
-                  {image && <Box>{image}</Box>}
+                  {/* {image && <Box>{image}</Box>} */}
                 </Box>
               ))}
             </Box>
