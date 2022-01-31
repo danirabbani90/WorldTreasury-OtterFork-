@@ -464,12 +464,12 @@ function Chart({
           display="flex"
           justifyContent="space-between"
           alignItems="center"
-          style={{ width: '100%', overflow: 'hidden' }}
+          style={{ width: '100%', overflow: 'hidden', paddingTop: 12 }}
         >
           <Box display="flex" width="90%" alignItems="center" style={{ gap: '5px' }}>
             <Typography
               variant="h6"
-              color="secondary"
+              // color="secondary"
               className="card-title-text"
               style={{ fontWeight: 700, overflow: 'hidden' }}
             >

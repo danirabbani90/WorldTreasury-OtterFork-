@@ -16,7 +16,8 @@ import {
 } from '@material-ui/core';
 import { Skeleton } from '@material-ui/lab';
 import _ from 'lodash';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState, useContext } from 'react';
+import { AppThemeContext } from 'src/helpers/app-theme-context';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import InfoTooltip from 'src/components/InfoTooltip/InfoTooltip.jsx';
@@ -73,7 +74,8 @@ function Stake() {
   const dispatch = useDispatch();
   const { provider, address, connect, chainID } = useWeb3Context();
   const tabsActions = useRef<TabsActions>(null);
-
+  const currentTheme = useContext(AppThemeContext);
+  const currentThemeName = currentTheme.name;
   const [view, setView] = useState(0);
   const [quantity, setQuantity] = useState<string>('');
 
@@ -184,7 +186,7 @@ function Stake() {
   return (
     <div id="stake-view" className={styles.root}>
       <Zoom in={true}>
-        <Paper className="ohm-card">
+        <Paper className={currentThemeName === 'light' ? 'ohm-card ohm-card-lt' : 'ohm-card'}>
           <Grid container direction="column" spacing={2}>
             <Grid item>
               <div className="card-header">
@@ -380,7 +382,7 @@ function Stake() {
                       </p>
                     </div>
                     <div className="data-row">
-                      <div className="data-row-name">
+                      <div style={{ color: '#000' }} className="data-row-name">
                         {t('stake.stakedBalance')}
                         <InfoTooltip message={t('stake.infoTooltips.stakedBalance')} />
                       </div>

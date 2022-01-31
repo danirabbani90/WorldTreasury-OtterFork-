@@ -38,10 +38,22 @@
     border: 1px solid #d1a55c;
     box-shadow: 0px 4px 30px rgb(209 165 92 / 15%);
   }
+  .ohm-card-lt {
+    background-color: #fff;
+    border: 1px solid #d1a55c;
+    box-shadow: 0px 4px 30px rgb(209 165 92 / 15%);
+  }
   .ohm-card .header {
     min-height: 3em;
   }
   .ohm-card.secondary .card-header {
+    min-height: 33px !important;
+    height: 20px;
+  }
+  .ohm-card-lt .header {
+    min-height: 3em;
+  }
+  .ohm-card-lt.secondary .card-header {
     min-height: 33px !important;
     height: 20px;
   }

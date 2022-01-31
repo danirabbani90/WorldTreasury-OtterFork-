@@ -1,7 +1,7 @@
 import { Box, Container, Grid, Paper, Typography, useMediaQuery, Zoom } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 import { Skeleton } from '@material-ui/lab';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import DashboardHero from 'src/components/DashboardHero';
@@ -12,6 +12,7 @@ import { formatCurrency, getTokenImage, trim } from '../../helpers';
 import apollo from '../../lib/apolloClient';
 import './treasury-dashboard.scss';
 import { bulletpoints, itemType, treasuryDataQuery } from './treasuryData.js';
+import { AppThemeContext } from 'src/helpers/app-theme-context';
 
 const numberFormatter = Intl.NumberFormat('en', { maximumFractionDigits: 0 });
 
@@ -131,6 +132,8 @@ function TreasuryDashboard() {
       setBackingPerClam(latestMetrics.treasuryMarketValue / latestMetrics.clamCirculatingSupply);
     });
   }, []);
+  const currentTheme = useContext(AppThemeContext);
+  const currentThemeName = currentTheme.name;
 
   return (
     <div id="treasury-dashboard-view" className={`${smallerScreen && 'smaller'} ${verySmallScreen && 'very-small'}`}>
@@ -144,13 +147,13 @@ function TreasuryDashboard() {
           paddingRight: smallerScreen || verySmallScreen ? '0' : '3.3rem',
         }}
       >
-        <Box className="hero-metrics">
-          <Paper className="hero-metrics__paper">
+        <Box className={currentThemeName === 'light' ? 'hero-metrics-lt' : 'hero-metrics'}>
+          <Paper className={currentThemeName === 'light' ? 'hero-metrics-lt__paper' : 'hero-metrics__paper'}>
             <Box display="flex" flexWrap="wrap" justifyContent="space-between" alignItems="center">
               {displayData.map(({ title, value, info, image }, i) => (
                 <Box key={i} className="metric-container">
                   <Box className="metric">
-                    <Typography variant="h6" color="secondary">
+                    <Typography variant="h6">
                       {title}
                       {info && <InfoTooltip message={info} />}
                     </Typography>
@@ -168,7 +171,7 @@ function TreasuryDashboard() {
         <Zoom in={true}>
           <Grid container spacing={2} className="data-grid">
             <Grid item lg={6} md={6} sm={12} xs={12}>
-              <Paper className="ohm-card ohm-chart-card">
+              <Paper className={'ohm-chart-card ' + (currentThemeName === 'light' ? 'ohm-card-lt' : 'ohm-card')}>
                 {
                   // @ts-ignore
                   <Chart
@@ -190,7 +193,7 @@ function TreasuryDashboard() {
             </Grid>
 
             <Grid item lg={6} md={6} sm={12} xs={12}>
-              <Paper className="ohm-card ohm-chart-card">
+              <Paper className={'ohm-chart-card ' + (currentThemeName === 'light' ? 'ohm-card-lt' : 'ohm-card')}>
                 {
                   // @ts-ignore
                   <Chart
@@ -226,7 +229,7 @@ function TreasuryDashboard() {
             </Grid>
 
             <Grid item lg={6} md={6} sm={12} xs={12}>
-              <Paper className="ohm-card ohm-chart-card">
+              <Paper className={'ohm-chart-card ' + (currentThemeName === 'light' ? 'ohm-card-lt' : 'ohm-card')}>
                 {
                   <Chart
                     type="stack"
@@ -259,7 +262,7 @@ function TreasuryDashboard() {
             </Grid>
 
             <Grid item lg={6} md={6} sm={12} xs={12}>
-              <Paper className="ohm-card">
+              <Paper className={'ohm-chart-card ' + (currentThemeName === 'light' ? 'ohm-card-lt' : 'ohm-card')}>
                 {
                   // @ts-ignore
                   <Chart
@@ -303,7 +306,7 @@ function TreasuryDashboard() {
             */}
 
             <Grid item lg={6} md={6} sm={12} xs={12}>
-              <Paper className="ohm-card">
+              <Paper className={'ohm-chart-card ' + (currentThemeName === 'light' ? 'ohm-card-lt' : 'ohm-card')}>
                 {
                   // @ts-ignore
                   <Chart
@@ -325,7 +328,7 @@ function TreasuryDashboard() {
             </Grid>
 
             <Grid item lg={6} md={6} sm={12} xs={12}>
-              <Paper className="ohm-card">
+              <Paper className={'ohm-chart-card ' + (currentThemeName === 'light' ? 'ohm-card-lt' : 'ohm-card')}>
                 {
                   // @ts-ignore
                   <Chart
@@ -350,7 +353,7 @@ function TreasuryDashboard() {
             </Grid>
 
             <Grid item lg={6} md={6} sm={12} xs={12}>
-              <Paper className="ohm-card">
+              <Paper className={'ohm-chart-card ' + (currentThemeName === 'light' ? 'ohm-card-lt' : 'ohm-card')}>
                 {
                   // @ts-ignore
                   <Chart
