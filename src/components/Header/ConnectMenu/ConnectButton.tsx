@@ -29,7 +29,7 @@ const ConnectButton = ({ status }: ConnectButtonProps) => {
   if (status === ConnectButtonStatus.NotConnected) {
     // TODO: to be translate - components.connect
     if (isMobile) return <CustomButton text="Connect" onClick={connect} />;
-    return <CustomButton text={t('common.connectWallet')} onClick={connect} />;
+    return <CustomButton type="outline" text={t('common.connectWallet')} icon={MetamaskIcon} onClick={connect} />;
   }
 
   const [popperOpen, setPopperOpen] = useState(false);

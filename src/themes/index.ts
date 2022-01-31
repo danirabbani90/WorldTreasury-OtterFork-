@@ -2,7 +2,7 @@ import { createTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import commonSettings from './global';
 
 const colors = {
-  otterDark: '#1D2654',
+  otterDark: '#212121',
   otterBlue: '#3B4BD8',
   otterBlueHover: '#303FC7',
   darkGray200: '#fff',
@@ -11,7 +11,7 @@ const colors = {
 };
 
 const lightTheme = {
-  color: '#1D2654',
+  color: '#212121',
   white: '#ffffff',
   gold: '#F8CC82',
   gray: '#A3A3A3',

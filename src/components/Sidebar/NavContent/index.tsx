@@ -124,8 +124,13 @@ function NavContent() {
   }, []);
 
   return (
-    <Paper className="dapp-sidebar">
-      <Box className="dapp-sidebar" display="flex" justifyContent="space-between" flexDirection="column">
+    <Paper className={currentThemeName === 'light' ? 'dapp-sidebar-lt' : 'dapp-sidebar'}>
+      <Box
+        className={currentThemeName === 'light' ? 'dapp-sidebar-lt' : 'dapp-sidebar'}
+        display="flex"
+        justifyContent="space-between"
+        flexDirection="column"
+      >
         <div className="dapp-menu-top">
           <Link href="https://www.otterclam.finance" target="_blank">
             <Box display="flex" flexDirection="column" className="branding-header">

@@ -1,10 +1,10 @@
 @import 'styles/_colors.scss';
 
 .landing {
-  background-color: #fff;
+  background-color: #fff5e6;
   display: flex;
   flex-direction: column;
-  color: #1d2654;
+  color: #212121;
 
   .whitelist-check {
     z-index: 10000;
@@ -126,7 +126,7 @@
       &__banner {
         width: 100%;
         height: 156px;
-        background-color: #fff;
+        background-color: #fff5e6;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -199,8 +199,8 @@
     text-decoration: none;
     width: 30px;
     height: 30px;
-    border-bottom: 3px solid #1d2654;
-    border-right: 3px solid #1d2654;
+    border-bottom: 3px solid #212121;
+    border-right: 3px solid #212121;
     -webkit-transform: translate(-50%, 0%) rotate(45deg);
     -moz-transform: translate(-50%, 0%) rotate(45deg);
     transform: translate(-50%, 0%) rotate(45deg);

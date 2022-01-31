@@ -113,7 +113,7 @@ export const bulletpoints = {
     {
       right: 20,
       top: -12,
-      background: '#1D2654',
+      background: '#212121',
     },
     {
       right: 20,

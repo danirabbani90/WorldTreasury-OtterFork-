@@ -16,6 +16,12 @@
   height: 100%;
 }
 
+.dapp-sidebar-lt {
+  border-radius: 0 !important;
+  background-color: #fff !important;
+  height: 100%;
+}
+
 .dapp-menu-item {
   display: flex;
   flex-direction: row;
@@ -205,6 +211,41 @@
 }
 
 .mobile .show .dapp-sidebar {
+  .dapp-menu-links {
+    flex-flow: row !important;
+    justify-content: center !important;
+  }
+  .dapp-menu-external-links {
+    padding-top: 3em;
+    line-height: 200% !important;
+    justify-content: center;
+  }
+  .dapp-nav,
+  .dapp-menu-external-links {
+    flex-flow: column !important;
+    justify-content: flex-start;
+    margin: auto;
+    a {
+      padding: 0;
+      svg {
+        align-self: center;
+      }
+    }
+  }
+  .dapp-menu-external-links a {
+    justify-content: left;
+  }
+  .dapp-nav {
+    .dapp-menu-data.discounts {
+      margin-top: 2.5em;
+      .bond-discounts {
+        display: none;
+      }
+    }
+  }
+}
+
+.mobile .show .dapp-sidebar-lt {
   .dapp-menu-links {
     flex-flow: row !important;
     justify-content: center !important;

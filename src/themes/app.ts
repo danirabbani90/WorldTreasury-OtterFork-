@@ -11,7 +11,7 @@ const colorPalette = {
     white: '#FFFFFF',
   },
   light: {
-    otterDark: '#1D2654',
+    otterDark: '#212121',
     white: '#FFFFFF',
     darkBlue: '#060606',
     lightGray100: '#fff',
@@ -26,7 +26,7 @@ const colorPalette = {
     chip: {
       normal: {
         bg: '#DBE6EC',
-        fg: '#1D2654',
+        fg: '#212121',
       },
       status: {
         bg: '#fff',
