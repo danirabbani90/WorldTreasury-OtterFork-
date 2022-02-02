@@ -17,7 +17,7 @@ const PendingPopper = (props: Props) => {
     return state.pendingTransactions;
   });
   const getEtherscanUrl = (txnHash: string) => {
-    return chainID === 4 ? `https://rinkeby.etherscan.io/tx/${txnHash}` : `https://polygonscan.com/tx/${txnHash}`;
+    return chainID === 97 ? `https://rinkeby.etherscan.io/tx/${txnHash}` : `https://testnet.bscscan.com/tx/${txnHash}`;
   };
   return (
     <Popper id="ohm-popper-pending" {...props}>
