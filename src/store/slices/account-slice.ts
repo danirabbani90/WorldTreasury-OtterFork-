@@ -58,6 +58,7 @@ export const getBalances = createAsyncThunk(
     const clamBalance = await clamContract.balanceOf(address);
     const pearlContract = new ethers.Contract(addresses.PEARL_ADDRESS, PearlTokenContract, provider);
     const pearlBalance = await pearlContract.balanceOf(address);
+
     return {
       balances: {
         sClam: ethers.utils.formatUnits(sClamBalance, 9),
@@ -73,8 +74,10 @@ export const loadAccountDetails = createAsyncThunk(
   async ({ networkID, provider, address }: IAccountProps): Promise<IAccount> => {
     const addresses = getAddresses(networkID);
 
+
     const maiContract = new ethers.Contract(addresses.MAI_ADDRESS, MAIContract, provider);
     const clamContract = new ethers.Contract(addresses.CLAM_ADDRESS, ClamTokenContract, provider);
+
     const sClamContract = new ethers.Contract(addresses.sCLAM_ADDRESS, StakedClamContract, provider);
     const pearlContract = new ethers.Contract(addresses.PEARL_ADDRESS, PearlTokenContract, provider);
 
@@ -105,6 +108,7 @@ export const loadAccountDetails = createAsyncThunk(
       wrapping: {
         sClamWrap: +wrapAllowance,
       },
+
     };
   },
 );
