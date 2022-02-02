@@ -176,7 +176,7 @@ export default function AddPearlToNoteModal({
               <Typography className="add-pearl-modal__account-detail-label">Next Reward</Typography>
               <Typography className="add-pearl-modal__account-detail-value">{nextRewardValue} PEARL</Typography>
             </div> */}
-            {/*
+{/*             
             <div className="add-pearl-modal__account-detail">
               <Typography className="add-pearl-modal__account-detail-label">Next Reward Bonus</Typography>
               <Typography className="add-pearl-modal__account-detail-value">10 PEARL</Typography>

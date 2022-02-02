@@ -6,17 +6,17 @@ export enum Networks {
   POLYGON_MUMBAI = 80001,
   OTTER_FORK = 31338,
   HARDHAT = 31337,
-  BSCTESTNET = 97
+  BSC_TESTNET = 97
 }
 
 export const RPCURL = {
   [Networks.POLYGON_MAINNET]: 'https://polygon-rpc.com',
-  [Networks.POLYGON_MUMBAI]: 'https://polygon-mumbai.infura.io/v3/d7dae60b5e1d40b9b31767b0086aa75d',
+  [Networks.POLYGON_MUMBAI]: 'https://rpc-mumbai.maticvigil.com/',
   [Networks.OTTER_FORK]: 'https://fork-rpc.otterclam.finance',
   [Networks.HARDHAT]: 'http://localhost:8545',
-  [Networks.BSCTESTNET]: 'https://data-seed-prebsc-1-s1.binance.org:8545/',
+  [Networks.BSC_TESTNET]: 'https://data-seed-prebsc-1-s1.binance.org:8545/'
 };
 
-export const DEFAULT_NETWORK = Networks.POLYGON_MAINNET;
+export const DEFAULT_NETWORK = Networks.BSC_TESTNET;
 // export const DEFAULT_NETWORK = Networks.POLYGON_MUMBAI;
 // export const DEFAULT_NETWORK = Networks.HARDHAT;

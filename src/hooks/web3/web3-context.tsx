@@ -98,10 +98,10 @@ export const Web3ContextProvider: React.FC<{ children: ReactElement }> = ({ chil
       Number(otherChainID) !== Networks.POLYGON_MAINNET &&
       Number(otherChainID) !== Networks.POLYGON_MUMBAI &&
       Number(otherChainID) !== Networks.OTTER_FORK &&
-      Number(otherChainID) !== Networks.BSCTESTNET &&
+      Number(otherChainID) !== Networks.BSC_TESTNET &&
       Number(otherChainID) !== Networks.HARDHAT
     ) {
-      alert('Please switch your wallet to Polygon network to use OtterClam!');
+      alert('Please switch your wallet to BSC network to use OtterClam!');
     }
 
     if (chainID !== otherChainID) {
@@ -129,7 +129,7 @@ export const Web3ContextProvider: React.FC<{ children: ReactElement }> = ({ chil
 
     const validNetwork = _checkNetwork(chainId);
     if (!validNetwork) {
-      console.error('Wrong network, please switch to Polygon Mainnet');
+      console.error('Wrong network, please switch to BSC Mainnet');
       return;
     }
     setAddress(connectedAddress);

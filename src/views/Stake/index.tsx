@@ -87,7 +87,7 @@ function Stake() {
     return state.app.currentIndex;
   });
   const fiveDayRate = useSelector<IReduxState, number>(state => state.app.fiveDayRate);
-  const clamBalance = useSelector<IReduxState, string>(state => state.account.balances?.clam);
+  const clamBalance = useSelector<IReduxState, string>(state => state.account.balances?.clam); 
   const sClamBalance = useSelector<IReduxState, string>(state => state.account.balances?.sClam);
   const stakeAllowance = useSelector<IReduxState, number>(state => state.account.staking?.clamStake);
   const unstakeAllowance = useSelector<IReduxState, number>(state => state.account.staking?.sClamUnstake);
@@ -100,7 +100,7 @@ function Stake() {
   const chestAPY = useSelector<IReduxState, number>(state => _.max(state.lake.terms.map(p => p.apy)) || 0);
 
   const pearlBalance = useSelector<IReduxState, string>(state => state.account.balances?.pearl);
-
+  
   const setMax = () => {
     if (view === 0) {
       setQuantity(clamBalance);
@@ -378,7 +378,7 @@ function Stake() {
                     <div className="data-row">
                       <p className="data-row-name">{t('common.yourBalance')}</p>
                       <p className="data-row-value">
-                        {isAppLoading ? <Skeleton width="80px" /> : <>{trim(Number(clamBalance), 4)} CLAM</>}
+                        {isAppLoading ? <Skeleton width="80px" /> : <>{trim(Number(clamBalance), 4)} TREASURY</>}
                       </p>
                     </div>
                     <div className="data-row">
