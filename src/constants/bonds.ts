@@ -122,7 +122,7 @@ export function listBonds(chainId: number): BondMap {
     },
     mai: {
       key: 'mai',
-      name: 'MAI v2',
+      name: 'BUSD',
       address: BONDS.MAI,
       reserve: RESERVES.MAI,
       reserveUnit: 'MAI',
@@ -146,7 +146,7 @@ export function listBonds(chainId: number): BondMap {
     },
     mai_clam: {
       key: 'mai_clam',
-      name: 'MAI-CLAM LP',
+      name: 'BUSD-TREASURY LP',
       address: BONDS.MAI_CLAM,
       reserve: RESERVES.MAI_CLAM,
       reserveUnit: 'LP',
