@@ -59,16 +59,16 @@ export function listBonds(chainId: number): BondMap {
   return {
     matic: {
       key: 'matic',
-      name: 'WMATIC (4,4)',
-      address: '0xf57Fb38f57D2a4Fca0ee074A3F3b4e5C570959E4',
-      reserve: '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270',
-      reserveUnit: 'WMATIC',
+      name: 'WBNB (4,4)',
+      address: '0x04d756BFab53A5A0C678790A3E651eba0E1693FB',
+      reserve: '0xae13d989dac2f0debff460ac112a837c89baa7cd',
+      reserveUnit: 'wBNB',
       type: 'token',
       dexUrl: `https://quickswap.exchange/#/swap?outputCurrency=0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270`,
       deprecated: false,
       autostake: true,
       stable: false,
-      oracle: '0xAB594600376Ec9fD91F8e885dADF0CE036862dE0',
+      oracle: '0x2514895c72f50D8bd4B4F9b1110F0D6bD2c97526',
     },
     matic_clam: {
       key: 'matic_clam',
