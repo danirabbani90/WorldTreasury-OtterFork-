@@ -140,7 +140,11 @@ export function listBonds(chainId: number): BondMap {
       reserveUnit: 'MAI',
       type: 'token',
       dexUrl: `https://pancake.kiemtienonline360.com/#/swap?outputCurrency=${MAI_ADDRESS}`,
+<<<<<<< HEAD
+      deprecated: false,
+=======
       deprecated: true,
+>>>>>>> b162a024519d1b9ecc415f4c96891c58762295fb
       autostake: true,
       stable: true,
     },
