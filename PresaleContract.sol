@@ -798,10 +798,6 @@ contract Ownable is IOwnable {
 
 pragma solidity 0.7.5;
 
-
-
-
-
 contract preTokenSales is Ownable {
     using SafeMath for uint256;
     using SafeERC20 for IERC20;
@@ -854,6 +850,7 @@ contract preTokenSales is Ownable {
     }
 
     function buyPresaleToken(uint256 amountPaid_) external returns (bool) {
+        require(presaleEndTime > block.timestamp,"Please Enter the future Time");
         require(block.timestamp <= presaleEndTime, "PreSale has Ended." );
         uint256 presaleTokenAmountPurchased_ = _calculateAmountPurchased(amountPaid_);
         busd.safeTransferFrom(msg.sender, _saleProceedsAddress, amountPaid_);
